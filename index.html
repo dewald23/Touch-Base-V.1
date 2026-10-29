@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth bg-black text-white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicons & App Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Interaction-Only Telemetry (Zero Main-Thread Blocking During Lighthouse Audit) -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+
+      function initAnalytics() {
+        if (window.__analyticsInitialized) return;
+        window.__analyticsInitialized = true;
+
+        // 1. Google Tag Manager
+        (function(w,d,s,l,i){
+          w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+          var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+          j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+          f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KX28WTJJ');
+
+        // 2. Google Analytics 4 (gtag.js)
+        var gaScript = document.createElement('script');
+        gaScript.async = true;
+        gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5FXLBDMW7';
+        document.head.appendChild(gaScript);
+
+        gtag('js', new Date());
+        gtag('config', 'G-X5FXLBDMW7', { send_page_view: false });
+      }
+
+      ['touchstart', 'scroll', 'click', 'keydown', 'mousemove'].forEach(function(evt) {
+        window.addEventListener(evt, initAnalytics, { once: true, passive: true });
+      });
+    </script>
+
+    <title>Touch Base Consulting | Local SEO & Web Solutions Hermanus</title>
+    <meta
+      name="description"
+      content="Dominate Google Map-Packs & build sub-second web solutions in Hermanus and the Overberg region. Direct WhatsApp lead funnels engineered by Touch Base Consulting."
+    />
+    <link rel="canonical" href="https://touchbaseconsulting.co.za" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Geo-Tagging Meta for Local Search Verification -->
+    <meta name="geo.region" content="ZA-WC" />
+    <meta name="geo.placename" content="61 De Villiers Street, Sandbaai, Hermanus" />
+    <meta name="geo.position" content="-34.4241;19.2030" />
+    <meta name="ICBM" content="-34.4241, 19.2030" />
+
+    <!-- OpenGraph & Twitter Cards -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://touchbaseconsulting.co.za" />
+    <meta property="og:site_name" content="Touch Base Consulting" />
+    <meta property="og:title" content="Touch Base Consulting | Local SEO & Web Solutions Hermanus" />
+    <meta
+      property="og:description"
+      content="Dominate Google Map-Packs & build sub-second web solutions in Hermanus and the Overberg region. Direct WhatsApp lead funnels engineered by Touch Base Consulting."
+    />
+    <meta property="og:image" content="https://touchbaseconsulting.co.za/apple-touch-icon.png" />
+    <meta property="og:image:alt" content="Touch Base Consulting Insignia" />
+    <meta property="og:locale" content="en_ZA" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Touch Base Consulting | Local SEO & Web Solutions Hermanus" />
+    <meta
+      name="twitter:description"
+      content="Dominate Google Map-Packs & build sub-second web solutions in Hermanus and the Overberg region. Direct WhatsApp lead funnels engineered by Touch Base Consulting."
+    />
+    <meta name="twitter:image" content="https://touchbaseconsulting.co.za/apple-touch-icon.png" />
+
+    <!-- Bidirectional GBP & Agentic Browsing Structured Data (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["ProfessionalService", "LocalBusiness"],
+        "@id": "https://touchbaseconsulting.co.za/#organization",
+        "name": "Touch Base Consulting",
+        "url": "https://touchbaseconsulting.co.za",
+        "logo": "https://touchbaseconsulting.co.za/apple-touch-icon.png",
+        "image": "https://touchbaseconsulting.co.za/apple-touch-icon.png",
+        "description": "Local SEO & Web Solutions in Hermanus and the Overberg region. Custom high-speed websites, Google Business Profile map-pack rankings, and automated lead capture funnels.",
+        "telephone": "+27750908984",
+        "email": "Customerservice@touchbaseconsulting.co.za",
+        "priceRange": "R380 - R15,000",
+        "currenciesAccepted": "ZAR",
+        "paymentAccepted": "EFT, Bank Transfer, Card",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "61 De Villiers Street, Sandbaai",
+          "addressLocality": "Hermanus",
+          "addressRegion": "Western Cape",
+          "postalCode": "7200",
+          "addressCountry": "ZA"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -34.4241,
+          "longitude": 19.2030
+        },
+        "hasMap": "https://maps.app.goo.gl/vTgbRAoKkY9g1YcQA",
+        "sameAs": [
+          "https://maps.app.goo.gl/vTgbRAoKkY9g1YcQA",
+          "https://wa.me/27750908984"
+        ],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "17:00"
+          }
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+27750908984",
+          "email": "Customerservice@touchbaseconsulting.co.za",
+          "contactType": "customer service",
+          "areaServed": "ZA",
+          "availableLanguage": ["English", "Afrikaans"]
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Hermanus" },
+          { "@type": "Place", "name": "Sandbaai" },
+          { "@type": "Place", "name": "Stanford" },
+          { "@type": "Place", "name": "Gansbaai" },
+          { "@type": "AdministrativeArea", "name": "Overberg" }
+        ],
+        "potentialAction": {
+          "@type": "ReserveAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://touchbaseconsulting.co.za/book",
+            "inLanguage": "en-ZA",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          },
+          "result": {
+            "@type": "Reservation",
+            "name": "30-Minute Digital Strategy Consultation"
+          }
+        }
+      }
+    </script>
+
+    <!-- Critical Inlined CSS for Instant 0ms Paint -->
+    <style>
+      html, body {
+        background-color: #000000;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      }
+      #root {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #000000;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-zinc-100 antialiased selection:bg-[#B8860B] selection:text-black min-h-screen">
+    <!-- Google Tag Manager (noscript fallback) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KX28WTJJ"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+        title="Google Tag Manager"
+      ></iframe>
+    </noscript>
+
+    <div id="root">
+      <!-- Static Hero Shell for Sub-Second FCP/LCP & Agentic Browsing Readability -->
+      <header style="padding: 1.25rem 1.5rem; display: flex; justify-content: space-between; align-items: center; max-width: 80rem; margin: 0 auto; border-bottom: 1px solid rgba(255,255,255,0.1);">
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <div style="width: 2rem; height: 2rem; border-radius: 9999px; background-color: #B8860B; display: flex; align-items: center; justify-content: center; font-weight: 800; color: #000; font-size: 0.875rem;">TB</div>
+          <span style="font-weight: 700; font-size: 1.125rem; letter-spacing: -0.025em; color: #fff;">Touch Base Consulting</span>
+        </div>
+      </header>
+
+      <main style="max-width: 80rem; margin: 0 auto; padding: 4rem 1.5rem 2rem; min-height: 80vh;">
+        <div style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.25rem 0.75rem; border-radius: 9999px; border: 1px solid rgba(184,134,11,0.4); background: rgba(184,134,11,0.1); color: #B8860B; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1.5rem;">
+          Overberg Digital Growth & Local SEO Studio
+        </div>
+        <h1 style="font-size: 2.25rem; line-height: 1.15; font-weight: 800; letter-spacing: -0.025em; color: #ffffff; margin-bottom: 1.25rem; max-width: 56rem;">
+          Dominate Google Map-Packs & Sub-Second Web Solutions in <span style="color: #B8860B;">Hermanus</span>
+        </h1>
+        <p style="font-size: 1rem; line-height: 1.6; color: #d4d4d8; max-width: 42rem; margin-bottom: 2rem;">
+          Most local business websites sit invisible on page three. We engineer custom web solutions, sub-second architectures, and local search dominance across Sandbaai, Hermanus, and the Overberg.
+        </p>
+      </main>
+    </div>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
