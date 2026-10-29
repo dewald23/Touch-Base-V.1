@@ -1,0 +1,27 @@
+# Touch Base Consulting — Robots Policy
+# https://touchbaseconsulting.co.za
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_*
+Disallow: /*?*fbclid=*
+
+# Generative Engine Optimization (GEO) & Search Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Canonical XML Sitemap
+Sitemap: https://touchbaseconsulting.co.za/sitemap.xml
