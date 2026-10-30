@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { ROUTE_METADATA, type AppRoute } from '../types/seo';
+import { SITE_CONFIG } from '../config/site';
 
 interface SEOHeadProps {
   currentRoute: AppRoute;
@@ -16,7 +17,7 @@ export default function SEOHead({ currentRoute }: SEOHeadProps) {
       descEl.setAttribute('content', meta.description);
     }
 
-    const canonicalUrl = `${DOMAIN}${currentRoute === '/' ? '' : currentRoute}`;
+    const canonicalUrl = `${SITE_CONFIG.url}${currentRoute === '/' ? '' : currentRoute}`;
 const canonicalEl = document.querySelector('link[rel="canonical"]');
 if (canonicalEl) {
   canonicalEl.setAttribute('href', canonicalUrl);
@@ -27,7 +28,7 @@ if (canonicalEl) {
         event: 'page_view',
         page_path: currentRoute,
         page_title: meta.title,
-        page_location: meta.canonical,
+        page_location: canonicalUrl,
       });
     }
   }, [currentRoute]);

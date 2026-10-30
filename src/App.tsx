@@ -8,6 +8,7 @@ import type { AppRoute } from './types/seo';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WhatsAppWidget from './components/WhatsAppWidget';
+import { SITE_CONFIG } from './config/site';
 
 // Ensure these match the exact casing of your files inside src/pages/
 import HomePage from './pages/HomePage';
@@ -19,14 +20,13 @@ import ContactPage from './pages/ContactPage';
 import PrivacyPage from './pages/PrivacyPage';
 import TermsPage from './pages/TermsPage';
 
-const DOMAIN = 'https://touchbaseconsulting.co.za';
-
 function getInitialRoute(): AppRoute {
   if (typeof window === 'undefined') return '/';
   const path = window.location.pathname.toLowerCase().replace(/\/$/, '') || '/';
   if (path === '/services') return '/services';
   if (path === '/pricing') return '/pricing';
   if (path === '/audit') return '/audit';
+  if (path === '/book') return '/book';
   if (path === '/contact') return '/contact';
   if (path === '/privacy') return '/privacy';
   if (path === '/terms') return '/terms';
@@ -51,7 +51,7 @@ export default function App() {
     if (typeof window === 'undefined') return;
 
     const cleanPath = currentRoute === '/' ? '' : currentRoute;
-    const canonicalUrl = `${DOMAIN}${cleanPath}`;
+    const canonicalUrl = `${SITE_CONFIG.url}${cleanPath}`;
 
     // Update or insert canonical link
     let canonicalLink = document.querySelector('link[rel="canonical"]');
@@ -95,6 +95,8 @@ export default function App() {
         return <PricingPage onNavigate={handleNavigate} />;
       case '/audit':
         return <AuditPage onNavigate={handleNavigate} />;
+      case '/book':
+        return <BookPage onNavigate={handleNavigate} />;
       case '/contact':
         return <ContactPage onNavigate={handleNavigate} />;
       case '/privacy':
