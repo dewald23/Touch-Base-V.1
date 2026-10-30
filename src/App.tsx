@@ -8,10 +8,13 @@ import type { AppRoute } from './types/seo';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WhatsAppWidget from './components/WhatsAppWidget';
+
+// Ensure these match the exact casing of your files inside src/pages/
 import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPage';
 import PricingPage from './pages/PricingPage';
 import AuditPage from './pages/AuditPage';
+import BookPage from './pages/BookPage';         
 import ContactPage from './pages/ContactPage';
 import PrivacyPage from './pages/PrivacyPage';
 import TermsPage from './pages/TermsPage';

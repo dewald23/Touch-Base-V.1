@@ -16,10 +16,11 @@ export default function SEOHead({ currentRoute }: SEOHeadProps) {
       descEl.setAttribute('content', meta.description);
     }
 
-    const canonicalEl = document.querySelector('link[rel="canonical"]');
-    if (canonicalEl) {
-      canonicalEl.setAttribute('href', meta.canonical);
-    }
+    const canonicalUrl = `${DOMAIN}${currentRoute === '/' ? '' : currentRoute}`;
+const canonicalEl = document.querySelector('link[rel="canonical"]');
+if (canonicalEl) {
+  canonicalEl.setAttribute('href', canonicalUrl);
+}
 
     if (typeof window !== 'undefined' && (window as any).dataLayer) {
       (window as any).dataLayer.push({
